@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.logo {
+  float: left;
+  margin: 0;
+  padding: 20px;
+}
+
+/* header style */
+.header {
+  background-color: orange;
+  height: 100px;
+}
+
+.cart-div {
+  float: right;
+  margin: 25px;
+  position: relative;
+}
+
+.cart-div img {
+  width: 30px;
+}
+
+.cart-div span {
+  position: absolute;
+  z-index: 5;
+  background-color: green;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: #fff;
+  top: -10px;
+  right: 0;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-items {
+  border: 1px solid#ccc;
+  margin: 20px;
+  padding: 20px;
+}
+
+.cart-page-container {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.cart-page-container table {
+  border-collapse: collapse;
+  flex: 50%;
+}
+
+.cart-page-container table td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.product-details {
+  flex: 35%;
+  margin: 0px 30px;
+}
+
+.price-details {
+  flex: 35%;
+  margin: 0px 30px;
+}
+
+.price-details .adjust-price {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-details .adjust-price span {
+  font: 20px;
+}
+
+/* search box */
+.search-box {
+  float: left;
+  padding: 25px;
+  width: 100px
+}
+
+.search-box input {
+  width: 100;
+  height: 30px;
+  border: 1px solid #777;
+  padding-left: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main-nav {
+  width: 100%;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
